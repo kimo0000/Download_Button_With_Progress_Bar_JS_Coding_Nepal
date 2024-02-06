@@ -1,0 +1,55 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  background-color: blueviolet;
+  display: grid;
+  place-items: center;
+}
+button {
+  width: 220px;
+  height: 80px;
+  border-radius: 35px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: width 0.5s, height 0.5s;
+  position: relative;
+}
+button.hide {
+  width: 450px;
+  height: 5px;
+}
+button.hide .bar {
+  background-color: red;
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  transition: width 2s;
+}
+.icon{
+    font-size: 25px;
+    /* padding: 10px; */
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;align-items: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
